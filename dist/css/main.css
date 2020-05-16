@@ -28,6 +28,21 @@ span.secondary {
 .bg-tan {
   background: #d8c3a5; }
 
+.bg-main {
+  background: #eae7dc; }
+
+.bg-secondary {
+  background: #e85a4f; }
+
+.bg-light {
+  background: #f4f4f4; }
+
+.bg-dark {
+  background: #333; }
+
+.bg-medium {
+  background: #8e8d8a; }
+
 .container {
   max-width: 1280px;
   margin: auto;
