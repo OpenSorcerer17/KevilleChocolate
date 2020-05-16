@@ -1,6 +1,63 @@
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+span.secondary {
+  color: #e85a4f; }
+
+.bg-tan {
+  background: #d8c3a5; }
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1.5rem; }
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem; }
+
+.btn-main {
+  color: #333;
+  background-color: #eae7dc; }
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4; }
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333; }
+
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: "Ubuntu", sans-serif;
@@ -16,3 +73,62 @@ ul {
 
 img {
   width: 100%; }
+
+header #navbar {
+  background: #d8c3a5;
+  height: 60px;
+  position: sticky;
+  top: 0; }
+  header #navbar .navbar {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    height: 60px;
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center; }
+    header #navbar .navbar a {
+      color: #333;
+      font-weight: 500;
+      margin-left: 25px;
+      padding: 7px 7px; }
+      header #navbar .navbar a:hover {
+        border-bottom: 2px solid #e85a4f;
+        color: #8e8d8a; }
+    header #navbar .navbar ul {
+      display: flex;
+      height: 100%;
+      align-items: center; }
+      header #navbar .navbar ul li {
+        height: 100%;
+        width: 100%; }
+
+header .showcase {
+  background: url("/dist/img/bg.jpg");
+  height: calc(100vh - 60px);
+  position: relative;
+  z-index: -1;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  header .showcase h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid #e85a4f; }
+  header .showcase p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 2rem; }
+  header .showcase .icons i {
+    padding: 0 1rem; }
+  header .showcase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -2; }

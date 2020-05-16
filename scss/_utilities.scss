@@ -25,3 +25,50 @@
 .my-4 {
   margin: 4rem 0;
 }
+
+// colors
+span {
+  &.secondary {
+    color: $secondary;
+  }
+}
+
+.bg-tan {
+  background: $tan;
+}
+
+// container
+.container {
+  max-width: $width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+// btn
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark;
+  }
+}

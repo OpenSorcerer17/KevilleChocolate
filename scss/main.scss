@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -24,4 +25,88 @@ ul {
 
 img {
   width: 100%;
+}
+
+// header
+header {
+  #navbar {
+    background: $tan;
+    height: 60px;
+    position: sticky;
+    top: 0;
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      color: $dark;
+      height: 60px;
+      width: 100%;
+      padding: 0 1rem;
+      align-items: center;
+
+      a {
+        color: $dark;
+        font-weight: 500;
+        margin-left: 25px;
+        padding: 7px 7px;
+
+        &:hover {
+          border-bottom: 2px solid $secondary;
+          color: $medium;
+        }
+      }
+
+      ul {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        li {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .showcase {
+    background: url("/dist/img/bg.jpg");
+    height: calc(100vh - 60px);
+    position: relative;
+    z-index: -1;
+    color: $light;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      border-bottom: 2px solid $secondary;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 1rem 2rem;
+    }
+
+    .icons {
+      i {
+        padding: 0 1rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: -2;
+    }
+  }
 }
