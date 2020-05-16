@@ -1,0 +1,96 @@
+// padding
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+// margin
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+// colors
+span {
+  &.secondary {
+    color: $secondary;
+  }
+}
+
+.bg-lightblue {
+  background: $lightblue;
+}
+.bg-main {
+  background: $main-color;
+}
+.bg-secondary {
+  background: $secondary;
+}
+.bg-light {
+  background: $light;
+}
+.bg-dark {
+  background: $dark;
+}
+.bg-medium {
+  background: $medium;
+}
+
+// container
+.container {
+  max-width: $width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+// btn
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark;
+  }
+}
+
+.heading {
+  font-size: 3rem;
+  color: $secondary;
+  text-align: center;
+  padding-top: 1rem;
+}
