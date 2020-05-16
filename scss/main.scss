@@ -1,8 +1,33 @@
 @import "config";
 @import "utilities";
 
+// general styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+<<<<<<< HEAD
   h1 {
     background-color: #556;
   }
+=======
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+  background: $main-color;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+>>>>>>> e30bc32f1fd16816d40be544701eea7e6fd07208
 }

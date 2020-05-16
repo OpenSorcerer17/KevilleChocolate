@@ -1,2 +1,23 @@
+<<<<<<< HEAD
 body h1 {
   background-color: #557; }
+=======
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+  background: #eae7dc; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+>>>>>>> e30bc32f1fd16816d40be544701eea7e6fd07208
