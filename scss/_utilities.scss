@@ -31,6 +31,10 @@ span {
   &.secondary {
     color: $secondary;
   }
+
+  &.money {
+    color: $money;
+  }
 }
 
 .bg-lightblue {
@@ -93,4 +97,9 @@ span {
   color: $secondary;
   text-align: center;
   padding-top: 1rem;
+}
+
+.pricelist {
+  color: $secondary;
+  text-align: center;
 }
