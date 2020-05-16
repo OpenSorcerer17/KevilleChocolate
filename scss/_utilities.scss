@@ -33,8 +33,8 @@ span {
   }
 }
 
-.bg-tan {
-  background: $tan;
+.bg-lightblue {
+  background: $lightblue;
 }
 .bg-main {
   background: $main-color;
@@ -86,4 +86,23 @@ span {
     color: #f4f4f4;
     background-color: $dark;
   }
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: $secondary;
+}
+
+.section-text {
+  padding-bottom: 1rem;
+  font-weight: 300;
 }

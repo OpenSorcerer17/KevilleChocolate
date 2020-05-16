@@ -27,53 +27,55 @@ img {
   width: 100%;
 }
 
-// header
-header {
-  #navbar {
-    background: $tan;
-    height: 60px;
-    position: sticky;
-    top: 0;
+// navbar
+#navbar {
+  background: $lightblue;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 11;
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    color: $dark;
+    height: 60px;
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center;
+
+    a {
       color: $dark;
-      height: 60px;
-      width: 100%;
-      padding: 0 1rem;
+      font-weight: 500;
+      margin-left: 25px;
+      padding: 7px 7px;
+
+      &:hover {
+        border-bottom: 2px solid $secondary;
+        color: $medium;
+      }
+    }
+
+    ul {
+      display: flex;
+      height: 100%;
       align-items: center;
 
-      a {
-        color: $dark;
-        font-weight: 500;
-        margin-left: 25px;
-        padding: 7px 7px;
-
-        &:hover {
-          border-bottom: 2px solid $secondary;
-          color: $medium;
-        }
-      }
-
-      ul {
-        display: flex;
+      li {
         height: 100%;
-        align-items: center;
-
-        li {
-          height: 100%;
-          width: 100%;
-        }
+        width: 100%;
       }
     }
   }
+}
 
+// header
+header {
   .showcase {
     background: url("/dist/img/bg.jpg");
     height: calc(100vh - 60px);
     position: relative;
-    z-index: -1;
+    z-index: 10;
     color: $light;
     display: flex;
     align-items: center;
@@ -82,7 +84,7 @@ header {
     text-align: center;
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       border-bottom: 2px solid $secondary;
     }
 
@@ -93,8 +95,21 @@ header {
     }
 
     .icons {
-      i {
+      a {
         padding: 0 1rem;
+        color: #fff;
+
+        i.fa-youtube:hover {
+          color: #c4302b;
+        }
+
+        i.fa-instagram:hover {
+          color: $lightpink;
+        }
+
+        i.fa-facebook:hover {
+          color: #3b5998;
+        }
       }
     }
 
@@ -107,6 +122,24 @@ header {
       height: 100%;
       background: rgba(0, 0, 0, 0.8);
       z-index: -2;
+    }
+  }
+}
+
+section {
+  &#about {
+    .section-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background: $main-color;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      p {
+        padding: 0 1.2rem;
+        font-weight: 300;
+      }
     }
   }
 }
