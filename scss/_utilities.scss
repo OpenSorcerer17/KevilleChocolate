@@ -26,6 +26,7 @@
   margin: 4rem 0;
 }
 
+<<<<<<< HEAD
 span {
   &.main-text {
     color: $main-text;
@@ -40,3 +41,66 @@ span {
   overflow: hidden;
   padding: 0 1.5rem;
 }
+=======
+// colors
+span {
+  &.secondary {
+    color: $secondary;
+  }
+}
+
+.bg-tan {
+  background: $tan;
+}
+.bg-main {
+  background: $main-color;
+}
+.bg-secondary {
+  background: $secondary;
+}
+.bg-light {
+  background: $light;
+}
+.bg-dark {
+  background: $dark;
+}
+.bg-medium {
+  background: $medium;
+}
+
+// container
+.container {
+  max-width: $width;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}
+
+// btn
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark;
+  }
+}
+>>>>>>> b89d4fe4801fd883209e86df713fe3ffb745915f
