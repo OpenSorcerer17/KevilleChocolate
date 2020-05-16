@@ -25,3 +25,18 @@
 .my-4 {
   margin: 4rem 0;
 }
+
+span {
+  &.main-text {
+    color: $main-text;
+  }
+}
+
+//container
+
+.container {
+  margin: 0 auto;
+  max-width: $width;
+  overflow: hidden;
+  padding: 0 1.5rem;
+}

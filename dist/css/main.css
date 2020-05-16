@@ -1,10 +1,40 @@
-<<<<<<< HEAD
-body h1 {
-  background-color: #557; }
-=======
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+span.main-text {
+  color: #e85a4f; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  overflow: hidden;
+  padding: 0 1.5rem; }
+
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: "Ubuntu", sans-serif;
@@ -20,4 +50,51 @@ ul {
 
 img {
   width: 100%; }
->>>>>>> e30bc32f1fd16816d40be544701eea7e6fd07208
+
+header .container {
+  background: #d8c3a5; }
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #d8c3a5;
+  width: 100%;
+  align-items: center;
+  padding: 0 7rem; }
+  header .navbar a {
+    color: #333;
+    font-weight: 550;
+    padding: 8px 8px;
+    margin-left: 15px; }
+    header .navbar a:hover {
+      border-bottom: #e85a4f 2px solid;
+      color: #777; }
+
+header ul {
+  display: flex; }
+
+header h1 {
+  color: #333; }
+
+header .showcase {
+  background: url("/dist/img/bg.JPG");
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+  color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  header .showcase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -2; }
+  header .showcase h1 {
+    font-size: 3rem; }
