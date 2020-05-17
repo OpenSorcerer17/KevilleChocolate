@@ -92,14 +92,39 @@ span {
   }
 }
 
-.heading {
-  font-size: 3rem;
-  color: $secondary;
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding-top: 1rem;
+  justify-content: center;
 }
 
-.pricelist {
+.heading {
+  font-size: 2rem;
+  padding-top: 1rem;
   color: $secondary;
-  text-align: center;
+}
+
+.section-text {
+  padding-bottom: 1rem;
+  font-weight: 300;
+}
+
+.underline {
+  border-bottom: 2px solid $medium;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  margin-right: 0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover a:hover {
+    color: $lightpink;
+  }
 }
