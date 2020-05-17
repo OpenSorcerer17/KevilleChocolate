@@ -25,6 +25,9 @@
 span.secondary {
   color: #164f91; }
 
+span.money {
+  color: #19b366; }
+
 .bg-lightblue {
   background: #def9fa; }
 
@@ -85,6 +88,18 @@ span.secondary {
   padding-bottom: 1rem;
   font-weight: 300; }
 
+.underline {
+  border-bottom: 2px solid #8e8d8a; }
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  margin-right: 0; }
+  .list li:last-child {
+    border-bottom: none; }
+  .list li:hover a:hover {
+    color: #e98074; }
+
 * {
   margin: 0;
   padding: 0;
@@ -103,7 +118,8 @@ ul {
   list-style: none; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 #navbar {
   background: #def9fa;
@@ -182,3 +198,117 @@ section#about .section-items {
   section#about .section-items p {
     padding: 0 1.2rem;
     font-weight: 300; }
+
+section#gallery {
+  background: #f5daef; }
+  section#gallery h3 {
+    text-align: center; }
+  section#gallery p {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 300; }
+  section#gallery .gallery-items {
+    padding: 1.7rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #f5daef;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem; }
+    section#gallery .gallery-items > div {
+      height: 400px; }
+    section#gallery .gallery-items img {
+      height: 100%;
+      object-fit: cover; }
+      section#gallery .gallery-items img:hover {
+        opacity: 0.8; }
+
+section#pricing .heading {
+  padding: 1rem 0; }
+
+section#pricing .price-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #eae7dc;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  section#pricing .price-item .price-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #eae7dc;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 2rem; }
+    section#pricing .price-item .price-grid li {
+      font-size: 2rem; }
+  section#pricing .price-item .quantities {
+    padding: 0 2.85rem;
+    text-align: right;
+    color: #164f91; }
+  section#pricing .price-item .price-grid-style {
+    padding: 0 2.85rem;
+    text-align: left;
+    color: #164f91; }
+  section#pricing .price-item img {
+    height: 400px;
+    object-fit: cover; }
+  section#pricing .price-item p {
+    color: #333;
+    padding: 1rem 2rem;
+    font-weight: 300; }
+
+section#social .social-grid {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  grid-template-columns: repeat(3, 1fr); }
+  section#social .social-grid > *:first-child {
+    grid-column: 1 / span 2; }
+  section#social .social-grid .grid-item {
+    padding: 0 2rem; }
+    section#social .social-grid .grid-item h3 {
+      padding-top: 0;
+      padding-bottom: 2rem; }
+    section#social .social-grid .grid-item i {
+      padding: 2rem 0;
+      color: #e98074;
+      border-radius: 50%;
+      border: 2px solid #e98074;
+      padding: 35px 40px;
+      transition: all 0.5s ease; }
+      section#social .social-grid .grid-item i:hover {
+        color: #164f91;
+        border-color: #164f91; }
+
+footer {
+  width: 100%;
+  background: #333;
+  color: #ddd; }
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%; }
+    footer .footer-grid .footer-item {
+      height: 100%;
+      padding: 0 2rem; }
+      footer .footer-grid .footer-item h4 {
+        font-size: 1.3rem;
+        color: #e98074;
+        font-weight: 500;
+        padding: 0.5rem 0; }
+      footer .footer-grid .footer-item a {
+        color: #ddd; }
+    footer .footer-grid > *:last-child {
+      grid-column: 1 / span 3;
+      background: #444;
+      padding: 0.5rem;
+      font-size: 0.75rem; }
