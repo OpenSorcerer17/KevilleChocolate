@@ -188,16 +188,20 @@ header .showcase {
     background: rgba(0, 0, 0, 0.7);
     z-index: -2; }
 
-section#about .section-items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: #eae7dc;
-  justify-content: center;
-  text-align: center;
-  align-items: center; }
-  section#about .section-items p {
-    padding: 0 1.2rem;
-    font-weight: 300; }
+section#about {
+  padding-bottom: 2rem; }
+  section#about .section-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #eae7dc;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    section#about .section-items p {
+      padding: 0 1.2rem;
+      font-weight: 300; }
+    section#about .section-items img {
+      border-radius: 50%; }
 
 section#gallery {
   background: #f5daef; }

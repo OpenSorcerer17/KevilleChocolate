@@ -130,6 +130,7 @@ header {
 section {
   // about section
   &#about {
+    padding-bottom: 2rem;
     .section-items {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -141,6 +142,10 @@ section {
       p {
         padding: 0 1.2rem;
         font-weight: 300;
+      }
+
+      img {
+        border-radius: 50%;
       }
     }
   }
