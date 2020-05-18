@@ -228,43 +228,44 @@ section#gallery {
       section#gallery .gallery-items img:hover {
         opacity: 0.8; }
 
-section#pricing .heading {
-  padding: 1rem 0;
-  width: 50%;
-  text-align: center; }
-
-section#pricing .price-item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: #eae7dc;
-  justify-content: center;
-  text-align: center;
-  align-items: center; }
-  section#pricing .price-item .price-grid {
+section#pricing {
+  padding-bottom: 2rem; }
+  section#pricing .heading {
+    padding: 1rem 0;
+    width: 50%;
+    text-align: center; }
+  section#pricing .price-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: #eae7dc;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    padding-bottom: 2rem; }
-    section#pricing .price-item .price-grid li {
-      font-size: 2rem; }
-  section#pricing .price-item .quantities {
-    padding: 0 2.85rem;
-    text-align: right;
-    color: #164f91; }
-  section#pricing .price-item .price-grid-style {
-    padding: 0 2.85rem;
-    text-align: left;
-    color: #164f91; }
-  section#pricing .price-item img {
-    height: 400px;
-    object-fit: cover; }
-  section#pricing .price-item p {
-    color: #333;
-    padding: 1rem 2rem;
-    font-weight: 300; }
+    align-items: center; }
+    section#pricing .price-item .price-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background: #eae7dc;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding-bottom: 2rem; }
+      section#pricing .price-item .price-grid li {
+        font-size: 2rem; }
+    section#pricing .price-item .quantities {
+      padding: 0 2.85rem;
+      text-align: right;
+      color: #164f91; }
+    section#pricing .price-item .price-grid-style {
+      padding: 0 2.85rem;
+      text-align: left;
+      color: #164f91; }
+    section#pricing .price-item img {
+      height: 400px;
+      object-fit: cover; }
+    section#pricing .price-item p {
+      color: #333;
+      padding: 1rem 2rem;
+      font-weight: 300; }
 
 section#social .social-grid {
   display: grid;
