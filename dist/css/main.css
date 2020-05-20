@@ -292,6 +292,9 @@ section#social .social-grid {
         color: #164f91;
         border-color: #164f91; }
 
+section#order h3 {
+  text-align: center; }
+
 footer {
   width: 100%;
   background: #333;
